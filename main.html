@@ -4,10 +4,34 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<title>Accessible Portfolio</title>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	 <nav role="navigation">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Heading with ARIA role -->
+    <h1 role="heading" aria-level="1">John Doe's Portfolio</h1>
+
+    <!-- Image with ARIA role and alt attribute -->
+    <img role="img" src="profile.jpg" alt="Profile picture of John Doe" />
+
+    <!-- Brief description -->
+    <p>Welcome to my professional portfolio. Here you will find information about my skills, projects, and how to contact me.</p>
+
+    <!-- List with ARIA roles -->
+    <ul role="list">
+        <li role="listitem">Web Development</li>
+        <li role="listitem">Graphic Design</li>
+        <li role="listitem">User Experience</li>
+    </ul>
     <script type="text/javascript" src="./script.js">
 </script>
 
